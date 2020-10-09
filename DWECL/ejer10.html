@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+    <script>
+        function arrayClonado(){
+            arrayNuevo = JSON.parse(JSON.stringify(array));
+            arrayNuevo1 = JSON.parse(JSON.stringify(array1));
+        }
+        
+    </script> 
+</head>
+<body>
+    <script>
+        var array = [1,2,4,0];
+        var array1 = [1,2,[4,0]];
+        var arrayNuevo = [];
+        var arrayNuevo1 = [];
+        arrayClonado();
+        console.log(arrayNuevo);
+        //Para mostrar el arrayNuevo1 hay que darle al desplegable de la Console 
+        //del navegador dentro del mismo array, ahi te aparecera el segundo array
+        console.log(arrayNuevo1);
+    </script>
+</body>
+</html>

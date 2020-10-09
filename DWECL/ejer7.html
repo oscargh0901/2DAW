@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <script>
+        let vec=[];  
+        let f;
+        for($i=0; $i<10; $i++){
+            vec[$i]=parseInt(Math.random()*1001);
+        }
+        document.write('Vector original<br>');
+        for($i=0; $i<10; $i++){
+            document.write(vec[$i]+'-');
+        }
+        document.write('<br>');
+        let menor=vec[0];
+        let pos=0;
+        for($i=0; $i<10; $i++){
+            if (vec[$i]<menor){
+            menor=vec[$i];
+            pos=$i;
+            }
+        }
+        document.write('Elemento menor del vector:'+menor);
+        document.write('<br>');
+        let vec2=vec.slice(pos);
+        document.write('Vector resultante de la llamada a slice<br>');
+        for($i=0;$i<vec2.length;$i++){
+            document.write(vec2[$i]+'-');
+        } 
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+</head>
+<body>
+    <script>
+        var num ;
+        for(i=100;i<999;i++){
+            var num = i;
+            var sum = 0;
+
+            var cadena = num.toString();
+            var digito1 = cadena.charAt(0);
+            var digito2 = cadena.charAt(1);;
+            var digito3 = cadena.charAt(2);;
+            
+            sum=(Math.pow(digito1, 3))+(Math.pow(digito2, 3))+(Math.pow(digito3, 3));
+
+            if(sum == num){
+                console.log(`${num} es un numero de Armstrong`);
+            } 
+        }
+    </script>
+</body>
+</html>

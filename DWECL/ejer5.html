@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <script>
+        function retornarMayor(numero1,numero2,numero3){
+            if(numero1>numero2 && numero1>numero3 && numero3>numero2){
+                alert(`${numero1} es el mayor`);
+                alert(`${numero2} es el menor`);
+                return numero1;
+                return numero2;
+            }else if(numero1>numero2 && numero1>numero3 && numero2>numero3){
+                alert(`${numero1} es el mayor`);
+                alert(`${numero3} es el menor`);
+                return numero1;
+                return numero3;
+            }else if(numero2>numero1 && numero2>numero3 && numero1>numero3){
+                alert(`${numero2} es el mayor`);
+                alert(`${numero3} es el menor`);
+                return numero1;
+                return numero3;
+            }else if(numero2>numero1 && numero2>numero3 && numero3>numero1){
+                alert(`${numero2} es el mayor`);
+                alert(`${numero1} es el menor`);
+                return numero1;
+                return numero3;
+            }else if(numero3>numero1 && numero3>numero2 && numero2>numero1){
+                alert(`${numero3} es el mayor`);
+                alert(`${numero1} es el menor`);
+                return numero1;
+                return numero3;
+            }else if(numero3>numero1 && numero3>numero2 && numero1>numero2){
+                alert(`${numero3} es el mayor`);
+                alert(`${numero2} es el menor`);
+                return numero1;
+                return numero3;
+            }else{
+                alert("Se han introducido unos valores no válidos");
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        let numero1 = 3;
+        let numero2 = 2;
+        let numero3 = 1;
+        retornarMayor(numero1,numero2,numero3);
+    </script>
+</body>
+</html>

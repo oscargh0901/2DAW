@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+    <script>
+        function menorMayor(elemento1, elemento2){
+            return elemento1-elemento2;
+        }
+        function mayorMenor(elemento1, elemento2){
+            return elemento2-elemento1;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        let vector=[];
+        let mensaje;
+        for($i=0; $i<10; $i++){
+            vector[$i]=parseInt(Math.random()*11);
+        }
+        mensaje = `\nVector original ${vector}\n`;
+        mensaje = mensaje + 'Ordenado de mayor a menor es ' + vector.sort(mayorMenor)+'\n';
+        mensaje = mensaje + 'Ordenado de menor a mayor es ' + vector.sort(menorMayor)+'\n';
+        alert(mensaje);
+    </script>
+</body>
+</html>

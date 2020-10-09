@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+</head>
+<body>
+    <script>
+        var array1 = [1,2,3];
+        var array2 = [2,30,1];
+        var nuevoArray = array1.concat(array2);
+        var fusionarArrays = nuevoArray.filter((el, index) => nuevoArray.indexOf(el) === index);
+        console.log(nuevoArray);
+        console.log(fusionarArrays);
+    </script>
+</body>
+</html>

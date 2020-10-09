@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+</head>
+<body>
+    <script>
+        var array = ["Sandía","Melón"];
+        var array1 = array.push("Kiwi");
+        var array2;
+        var borrado = array.shift();
+        var mitad = array.length % 2;
+        array.splice(mitad,1,"Melocotón");
+        console.log(`Se ha borrado este elemento: ${borrado}`);
+        var array3 = array.unshift("Pera");
+        var ordenado = array.sort();
+        console.log(array);
+        console.log(`Array ordenado alfabéticamente: ${ordenado}`);
+    </script>
+</body>
+</html>
