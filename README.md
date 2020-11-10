@@ -1,2 +1,2 @@
 # 2DAW
- Repositorio donde guardar todo sobre lenguajes de este curso
+ Repositorio donde guardar todos los códigos de este curso
