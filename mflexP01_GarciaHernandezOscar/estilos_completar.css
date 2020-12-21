@@ -1,0 +1,106 @@
+/*Caracteristicas generales: margenes 0, fuente Font google, tamaño de fuente responsive*/
+
+  /* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+*{
+  box-sizing: border-box;
+}
+  /* RESETEO LIMITADO DE PROPIEDADES margen 0*/
+*{
+  margin: 0px;
+}
+/*Aspecto especifico*/
+  /* classe .container - fuente, color, 80% ancho y centrado*/
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: blanchedalmond;
+  width: 80%;
+  text-align: center;
+}
+  /*color de la letra específico*/
+.container{
+  color:rgb(7, 43, 31);
+}
+  /*La cabecera*/
+header{
+  padding-top: 5%;
+  padding-bottom: 1%;
+  color: cadetblue;
+  font-size: 120%;
+}
+/* El contenedor flex para la primera fila de contenido .content_wrapper. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+
+  /* El menú */
+nav{
+  text-align: left;
+  margin-left: 5% auto;
+  color: blueviolet;
+  padding: 1%;
+  border: 2px solid black;
+}
+  /* El elemento principal main*/
+main{
+  color: rgb(97, 2, 97);
+  
+}
+main img{
+  width: 15%;
+  padding: 1%;
+  border: 2px solid black;
+}
+img{
+  border-radius: 5%;
+}
+  /* Artículo. Imágenes pequeñas */
+article img{
+  width: 10%;
+  padding: 1%;
+  border: 2px solid black;
+}
+article{
+  color: rgb(97, 2, 97);
+}
+.content_wrapper{
+  margin: auto;
+  display: flex;
+  width: 1000px;
+  height: 300px;
+  padding-top: 3%;
+}
+/* El contenedor flex para la segunda fila de contenido .articles. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+.container article{
+  flex-direction: row;
+}
+.articles{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 100px;
+  padding-left:15%;
+  color: rgb(97, 2, 97);
+}
+.articles img{
+  width: 20%;
+}
+/* Pie de la página */
+/* El contenedor flex para la tercera fila de contenido footer. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+footer{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 100px;
+  padding-top: 6%;
+  padding-bottom: 5%;
+}
+footer img{
+  padding: 1%;
+  width: 20px;
+}
+
