@@ -1,5 +1,5 @@
 * Título del proyecto:
-# maquetacionFLEX_Practica01;
+# maquetacionFLEX_Practica01
 * Descripción del proyecto:
 Práctica perteneciente a maquetación
 > usando Flex
